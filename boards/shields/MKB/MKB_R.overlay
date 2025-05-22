@@ -16,17 +16,17 @@
             = <&xiao_d  1 (GPIO_ACTIVE_LOW)>
             , <&xiao_d  2 (GPIO_ACTIVE_LOW)>
             , <&xiao_d  3 (GPIO_ACTIVE_LOW)>
-            , <&gpio0   9 (GPIO_ACTIVE_LOW)>
-            , <&gpio0  10 (GPIO_ACTIVE_LOW)>
-            , <&gpio0   9 (GPIO_ACTIVE_LOW)>
-            , <&xiao_d 10 (GPIO_ACTIVE_LOW)>
+            , <&xiao_d  4 (GPIO_ACTIVE_LOW)>
+            , <&xiao_d  5 (GPIO_ACTIVE_LOW)>
+            , <&xiao_d  6 (GPIO_ACTIVE_LOW)>
+            , <&xiao_d  7 (GPIO_ACTIVE_LOW)>
             ;
     };
 };
 
 &spi0 {
     status = "okay";
-    cs-gpios =  <&xiao_d 9 GPIO_ACTIVE_LOW>;
+    cs-gpios =  <&xiao_d 7 GPIO_ACTIVE_LOW>;
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
@@ -37,7 +37,7 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        irq-gpios = <&xiao_d 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
 
