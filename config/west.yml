@@ -24,6 +24,9 @@ manifest:
       remote: badjeff
       #remote: te9no
       revision: main
+    - name: zmk-driver-tlx493d
+      remote: te9no
+      revision: main
     # - name: zmk-leader-key
     #   remote: urob
     #   revision: v0.2.1 # set to same as ZMK version above
