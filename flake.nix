@@ -21,7 +21,7 @@
         parts = [ "L rgbled_adapter" "R" ];
         snippets = [ "zmk-usb-logging" ];
         enableZmkStudio = true;
-        zephyrDepsHash = "sha256-Qh7/i4O1PHfD0geyZFWQLPxi8Z71Lb/hVJGf/IZlQPM=";
+        zephyrDepsHash = "sha256-D3/raze/R9OA1lo1NJhIg02mYwFRqD5cY8r2GXCIoR8=";
         meta = {
           description = "ZMK firmware";
           license = nixpkgs.lib.licenses.mit;
